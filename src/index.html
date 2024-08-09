@@ -18,7 +18,9 @@
 
     <main class="container">
       <article id="dispatch">
-        <h4>Dispatch information</h4>
+        <header>
+          <h4>Dispatch information</h4>
+        </header>
         <div class="grid">
           <label for="date">
             Date
@@ -32,7 +34,7 @@
         <label for="dispatch_information">
           Dispatched for
           <label for="text">
-            <textarea id="text" name="text" 
+            <textarea id="text" name="text" rows=3 
               placeholder="A traumatic emergency involveing a 80 year old asian female who has fallen in their living room and is now unable to get up"
             >
             </textarea>
@@ -53,7 +55,9 @@
         </footer>
       </article>
       <article id="patient">
-        <h4>Patient Information</h4>
+        <header>
+          <h4>Patient Information</h4>
+        </header>
         <div class="grid">
           <label for="patient_age">
             Patient Age
@@ -111,7 +115,16 @@
           </label>
         </div>
         <footer>
-          Basic information concerning the patient.
+          Basic information concerning the patient. Includeing initial LOC, GCS and orientation.
+        </footer>
+      </article>
+      <article id="report">
+        <header>
+          <h4>"Completed" Patient Care Report</h4>
+        </header>
+        <textarea rows=10 readonly placeholder="You can copy this but you can not type"></textarea>
+        <footer>
+          Will most likely require adjustments.
         </footer>
       </article>
     </main>
