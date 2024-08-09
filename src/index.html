@@ -8,8 +8,109 @@
     <title>Hello world!</title>
   </head>
   <body>
+
+    <header class="container">
+      <hgroup>
+        <h1>PCR writer 9000!</h1>
+        <p>Created by Brandon H, because they hate writing PCRs</p>
+      </hgroup>
+    </header>
+
     <main class="container">
-      <h1>Hello world!</h1>
+      <article id="dispatch">
+        <h4>Dispatch information</h4>
+        <div class="grid">
+          <label for="date">
+            Date
+            <input type="date" id="date" name="date"/>
+          </label>
+          <label for="time">
+            time
+            <input type="time" id="time" name="time"/>
+          </label>
+        </div>
+        <label for="dispatch_information">
+          Dispatched for
+          <label for="text">
+            <textarea id="text" name="text" 
+              placeholder="A traumatic emergency involveing a 80 year old asian female who has fallen in their living room and is now unable to get up"
+            >
+            </textarea>
+          </label>
+        </label>
+        <div class="grid">
+          <label for="unit_identification">
+            Unit Identification
+            <input type="text" id="identification" name="identification" placeholder="EMS 1"/>
+          </label>
+          <label for="Providers">
+            Number of providers on unit
+            <input type="text" id="providers" name="providers" placeholder="2"/>
+          </label>
+        </div>
+        <footer>
+          Information provided by dispatch to the responding unit.
+        </footer>
+      </article>
+      <section id="patient">
+        <h4>Patient Information</h4>
+        <div class="grid">
+          <label for="patient_age">
+            Patient Age
+            <input type="number" name="patient_age" placeholder="24" aria-label="Number">
+          </label>
+          <label for="patient_sex">
+            Patient sex(AAB)
+            <select name="patient_sex" required>
+              <option selected>Male</option>
+              <option >Female</option>
+            </select>
+          </label>
+          <label for="patient_ethnicity">
+            Patient ethnicity
+            <select name="patient_ethnicity" required>
+              <option selected>Asian</option>
+              <option >Black</option>
+              <option >Hispanic</option>
+              <option >Indian</option>
+              <option >Native American</option>
+              <option >White</option>
+              <option >Other</option>
+              <option >Unkown</option>
+            </select>
+          <label>
+        </div>
+        <label for="location">
+          Location Found
+          <input type="text" name="location" placeholder="Inside their private residence"/>
+        </label>
+        <div class="grid">
+          <label for="LOC">
+            Level of conciousness
+            <select name"LOC" required>
+              <option selected>Alert</option>
+              <option >Verbal</option>
+              <option >Painful</option>
+              <option>Unresponsive</option>
+            </select>
+          </label>
+          <fieldset>
+            <legend>Orientation:</legend>
+            <input type="checkbox" id="hindi" name="Person"  />
+            <label htmlFor="Person">Person</label>
+            <input type="checkbox" id="swahili" name="Place" />
+            <label htmlFor="Place">Place</label>
+            <input type="checkbox" id="navi" name="Time"  />
+            <label htmlFor="Time" >Time</label>
+            <input type="checkbox" id="navi" name="Event"  />
+            <label htmlFor="Event" >Event</label>
+          </fieldset>
+          <label for="glascow">
+            Glascow Coma Score
+            <input type="number" name="glascow" placeholder="15" aria-label="glascow">
+          </label>
+        </div>
+      </section>
     </main>
     <script src="code.js"></script>
   </body>
