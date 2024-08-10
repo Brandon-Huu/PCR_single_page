@@ -6,6 +6,16 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 21px;
 }
+.free_child{
+  grid-column: 1/-1;
+}
+
+.centered_text {
+  text-align: center;
+}
+h4, summary{
+  text-align: center;
+}
 
 @media (max-width: 1024px) {
   .parent {
