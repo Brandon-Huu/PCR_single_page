@@ -1,6 +1,8 @@
 name: Screenshot-Action
 on:
   push:
+    branches:
+      - main
 
 jobs:
   copy_repository_then_screenshot:
