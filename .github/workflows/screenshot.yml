@@ -1,0 +1,16 @@
+name: Screenshot-Action
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubntu-latest
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: screenshot-website
+      uses: swinton/screenshot-website@v1.0.2
+      with:
+        source: file:///src/index.html
+        destination: screenshot.png
+          
