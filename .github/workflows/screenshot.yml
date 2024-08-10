@@ -16,4 +16,5 @@ jobs:
         source: file:///src/index.html
         destination: screenshot.png
         full-page: true
-          
+        width: 1920
+        height: 1080
