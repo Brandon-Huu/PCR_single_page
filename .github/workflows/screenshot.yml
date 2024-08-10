@@ -7,10 +7,12 @@ on:
 jobs:
   copy_repository_then_screenshot:
     runs-on: ubntu-latest
-    steps: 
-      - uses: actions/checkout@v4
-      - uses: swinton/screenshot-website@v1.0.2
-        with:
-          source: file:///src/index.html
-          destination: screenshot.png
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: screenshot-website
+      uses: swinton/screenshot-website@v1.0.2
+      with:
+        source: file:///src/index.html
+        destination: screenshot.png
           
