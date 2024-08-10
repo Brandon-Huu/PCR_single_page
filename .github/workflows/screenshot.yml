@@ -6,7 +6,7 @@ on:
 
 jobs:
   copy_repository_then_screenshot:
-    runs-on: ubntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: checkout repo
       uses: actions/checkout@v4
