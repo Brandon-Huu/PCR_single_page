@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="en">
+<!doctype html> <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +16,8 @@
       </hgroup>
     </header>
 
-    <main class="container parent">
+    <main class="container">
+      <div class="parent">
       <article id="dispatch">
         <header>
           <h4>Dispatch information</h4>
@@ -125,6 +125,11 @@
           <h4>Actions taken enroute</h4>
         </header>
         <footer>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </footer>
       </article>
 
@@ -133,6 +138,11 @@
           <h4>Arrival and scene sizeup</h4>
         </header>
         <footer>
+          <ul>
+            <li>What does the scene look like?</li>
+            <li>Where is the patient located?</li>
+            <li>Is the patient ambulatory?</li>
+          </ul>
         </footer>
       </article>
 
@@ -141,6 +151,11 @@
           <h4>Chief Complaint</h4>
         </header>
         <footer>
+          <ul>
+            <li>What the patient/family member/care states is the current problem</li>
+            <li>If no information available or cannot be communicated, utilize
+diagnostic skills to determine</li>
+          </ul>
         </footer>
       </article>
 
@@ -149,23 +164,26 @@
           <h4>Patient History</h4>
         </header>
         <footer>
+          <ul>
+            <li>Past medical history and HP</li>
+            <li>SAMPLE, OPQRST, AEIOUTIPS</li>
+            <li>Any statement the patient or spokesperson
+makes about the current event and past
+pertinent events</li>
+          </ul>
         </footer>
       </article>
-
-      <article>
-        <header>
-          <h4></h4>
-        </header>
-        <footer>
-        </footer>
-      </article>
-
 
       <article>
         <header>
           <h4>Assesment Findings</h4>
         </header>
         <footer>
+          <ul>
+            <li>Any treatment and/or intervention provided on scene</li>
+            <li>Include pertinent negatives</li>
+            <li>Results of any diagnostic equipment</li>
+          </ul>
         </footer>
       </article>
 
@@ -173,18 +191,42 @@
         <header>
           <h4>Treatments Provided</h4>
         </header>
+        <button class="full_width">Add Intervention</button>
         <footer>
+          <ul>
+            <li>Any treatment and/or intervention provided on scene</li>
+            <li>Who and when for each intervention, along with patient response</li>
+            <li>Time, dosage, and route for any medication</li>
+          </ul>
         </footer>
       </article>
 
       <article>
         <header>
-          <h4>Transportatio </h4>
+          <h4>Transportation</h4>
         </header>
         <footer>
+          <ul>
+            <li>Destination and mode (code 2 or 3)</li>
+            <li>All treatments and intervention in the same manner as on scene</li>
+            <li>Any Changes in patient condition</li>
+            <li>To whom and where you released the patient</li>
+          </ul>
         </footer>
       </article>
 
+      <article>
+        <header>
+          <h4>Exceptions</h4>
+        </header>
+        <footer>
+          <ul>
+            <li>Any issues during response, on scene, transport or arrival</li>
+            <li>Documentation area for patient refusal</li>
+          </ul>
+        </footer>
+      </article>
+  </div>
       <article id="report">
         <header>
           <h4>"Completed" Patient Care Report</h4>
@@ -194,7 +236,6 @@
           Will most likely require adjustments.
         </footer>
       </article>
-
     </main>
     <script src="code.js"></script>
   </body>
