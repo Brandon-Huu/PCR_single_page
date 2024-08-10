@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  build:
+  copy_repositor_then_screenshoty:
     runs-on: ubntu-latest
     steps:
     - name: checkout repo
